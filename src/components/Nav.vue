@@ -1,12 +1,12 @@
 <template>
   <div class="nav">
     <el-col :span="4" class="NavCol">
-      <el-menu router="true" default-active="1" class="el-menu-demo NavMenu" theme="dark" >
-        <h5 style="color: white">BIG SHIP</h5>
+      <el-menu :router=true default-active="1" class="el-menu-demo NavMenu" theme="dark" >
+        <h3 class="NavTitle">BIG SHIP</h3>
 
-        <el-menu-item index="1" route="/"><i class="el-icon-menu"></i>监控面板</el-menu-item>
-        <el-menu-item index="2" route="/stationManage"><i class="el-icon-setting"></i>基站管理</el-menu-item>
-        <el-menu-item index="3" route="/labelManage"><i class="el-icon-setting"></i>标签管理</el-menu-item>
+        <el-menu-item index="1" :route="{path:'/'}"><i class="el-icon-menu"></i>监控面板</el-menu-item>
+        <el-menu-item index="2" :route="{path:'/stationManage'}"><i class="el-icon-setting"></i>基站管理</el-menu-item>
+        <el-menu-item index="3" :route="{path:'/labelManage'}"><i class="el-icon-setting"></i>标签管理</el-menu-item>
       </el-menu>
     </el-col>
     <router-view></router-view>
@@ -23,10 +23,18 @@
 
 <style>
 
+  .NavTitle{
+    color: white;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
   .NavCol{
     position: fixed;
     height: 100%;
     top: 0;
+    z-index: 100;
   }
 
   .NavMenu{

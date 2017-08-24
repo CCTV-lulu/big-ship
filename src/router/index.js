@@ -20,7 +20,7 @@ export default new Router({
         },
         {
           path: '/stationManage',
-          component: Hello
+          component: Panel
         },
         {
           path: '/labelManage',

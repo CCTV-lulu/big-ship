@@ -2,18 +2,18 @@
   <div class="signIn">
     <h3>{{ msg }}</h3>
 
-    <div class="SignIn_input">
+    <div class="SignInInput">
       <el-input placeholder="用户名" v-model="username">
       </el-input>
     </div>
 
-    <div class="SignIn_input ">
+    <div class="SignInInput ">
       <el-input placeholder="密码" type="password" v-model="password">
       </el-input>
     </div>
 
-    <div class="SignIn_input">
-      <el-button type="primary" @click="login" class="SignIn_button">登录</el-button>
+    <div class="SignInInput">
+      <el-button type="primary" @click="login" class="SignInButton">登录</el-button>
     </div>
   </div>
 </template>
@@ -42,13 +42,13 @@
     font-weight: 400;
   }
 
-  .SignIn_input {
+  .SignInInput {
     width: 30%;
     padding-top: 30px;
     margin: auto;
   }
 
-  .SignIn_button {
+  .SignInButton {
     width: 100%;
   }
 
@@ -57,5 +57,6 @@
     top: 30%;
     width: 100%;
     font-weight: 500;
+    text-align: center;
   }
 </style>
