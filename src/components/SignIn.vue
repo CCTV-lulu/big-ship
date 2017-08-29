@@ -3,17 +3,17 @@
     <h3>{{ msg }}</h3>
 
     <div class="SignInInput">
-      <el-input placeholder="用户名" v-model="username">
+      <el-input placeholder="用户名" v-model="username" size="large" >
       </el-input>
     </div>
 
     <div class="SignInInput ">
-      <el-input placeholder="密码" type="password" v-model="password">
+      <el-input placeholder="密码" type="password" v-model="password" size="large">
       </el-input>
     </div>
 
     <div class="SignInInput">
-      <el-button type="primary" @click="login" class="SignInButton">登录</el-button>
+      <el-button type="primary" @click="login" class="SignInButton" size="large">登录</el-button>
     </div>
   </div>
 </template>
@@ -39,7 +39,8 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   h3 {
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 200%;
   }
 
   .SignInInput {
@@ -54,9 +55,14 @@
 
   .signIn {
     position: fixed;
-    top: 30%;
+    top: 25%;
     width: 100%;
     font-weight: 500;
     text-align: center;
   }
+  el-input {
+    height: 50px !important;
+  }
+
+
 </style>

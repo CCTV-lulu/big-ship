@@ -24,8 +24,10 @@
 <style>
 
   .NavTitle{
+    white-space: nowrap;
     color: white;
     font-weight: 500;
+    /*font-size: 180%;*/
     padding-left: 20px;
     padding-bottom: 5px;
   }
@@ -41,4 +43,10 @@
     height: 100%;
     text-align: left;
   }
+  .el-menu-item{
+    overflow: hidden;
+    /*font-size: 150%;*/
+    /*height: 80px;*/
+  }
+
 </style>
